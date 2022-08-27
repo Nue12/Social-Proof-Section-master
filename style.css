@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary */
+    --Very-Dark-Magenta--: hsl(300, 43%, 22%);
+    --Soft-Pink--: hsl(333, 80%, 67%);
+    /* Neutral */
+    --Dark-Grayish-Magenta--: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta--: hsl(300, 24%, 96%);
+    --White--: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    margin: 0px;
+    font-size: 15px;
+    background-image: 
+        url(./images/bg-pattern-top-desktop.svg),
+        url(./images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, right bottom;
+    background-repeat: no-repeat;
+    background-size: 40%, 60%;
+    margin: 30px 80px;
+    line-height: 25px;
+}
+
+.upperSocialProof {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-container {
+    width: 360px;
+}
+
+.contentTitle {
+    font-size: 40px;
+    width: 300px;
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta--);
+    line-height: 33px;
+    margin-bottom: 0px;
+}
+
+.content {
+    color: var(--Dark-Grayish-Magenta--);
+    font-size: 14px;
+}
+
+.reviewCard {
+    background-color: var(--Light-Grayish-Magenta--);
+    padding: 0px 24px;
+    width: 400px;
+    border-radius: 7px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.firstRateCard {
+    margin-left: 50px;
+}
+
+.secondRateCard {
+    margin-left: 100px;
+}
+
+.thirdRateCard {
+    margin-right: 0px;
+    margin-left: 150px;
+}
+
+.reviewCard img {
+    vertical-align: middle;
+    margin-left: 2px;
+}
+
+.fiveStarRating {
+    vertical-align: middle;
+    margin-left: 20px;
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta--);
+}
+
+.bottomSocialProof {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-container {
+    background-color: var(--Very-Dark-Magenta--);
+    width: 338px;
+    padding: 10px 27px 27px;
+    color: var(--White--);
+    border-radius: 10px;
+}
+
+.secondBottomCard {
+    margin-top: 30px;
+}
+
+.thirdBottomCard {
+    margin-top: 60px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.userImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.user-Identity {
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+.user-Identity h4 {
+    margin-bottom: 8px;
+}
+
+.user-Identity p {
+    margin-top: 8px;
+    font-weight: 400;
+    color: var(--Soft-Pink--);
+}
+
+.userReviewContent {
+    letter-spacing: 1px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1190px) {
+    .firstBottomCard {
+        margin-top: 30px;
+    }
+
+    .thirdBottomCard {
+        margin: 60px auto;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .upperSocialProof {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .bottomSocialProof {
+        flex-direction: column;
+    }
+    /* .secondBottomCard {
+        margin: 30px auto;
+    }
+
+    .thirdBottomCard {
+        margin: 30px auto;
+    } */
+}
+
+@media screen and (max-width: 650px) {
+    .content-container {
+        text-align: center;
+    }
+    .contentTitle {
+        margin: auto;
+    }
+    .reviewCard {
+        flex-direction: column;
+    }
+    .fiveStarRating {
+        margin: 0px;
+    }
+    .firstRateCard {
+        margin: 20px auto;
+    }
+    .secondRateCard {
+        margin: 20px auto;
+    }
+    .thirdRateCard {
+        margin: 20px auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+  }
